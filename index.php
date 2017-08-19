@@ -9,22 +9,30 @@
 			width: 100%;
 			height: 300px;
 			float: left;
-			background: orange;
 			margin-top: 10%;
 		}
 
-		.container p{
+		.container .main{
 			width: 100%;
 			margin: 0 auto;
 			text-align: center;
-			background: #FFF;
+			color: #FFF;
 			font-size: 124px;
+		}
+
+		.container .second{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			color: #FFF;
+			font-size: 84px;
 		}
 	</style>
 </head>
 <body>	
 	<div class="container">
-		<p>Livre</p>
+		<p class="main">Livre</p>
+		<p class="second">Free</p>
 	</div>
 </body>
 </html>
