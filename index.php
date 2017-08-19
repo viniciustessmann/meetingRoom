@@ -1,5 +1,6 @@
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<style type="text/css">
 		body{
 			background-color: green;
@@ -18,6 +19,7 @@
 			text-align: center;
 			color: #FFF;
 			font-size: 124px;
+			font-family: 'Lato', sans-serif;
 		}
 
 		.container .second{
@@ -26,6 +28,7 @@
 			text-align: center;
 			color: #FFF;
 			font-size: 84px;
+			font-family: 'Lato', sans-serif;
 		}
 	</style>
 </head>
