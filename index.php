@@ -1,5 +1,6 @@
 <html>
 <head>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<style type="text/css">
 		body{
@@ -39,3 +40,38 @@
 	</div>
 </body>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).click(function(){
+			changeStatus();
+		});	
+	});
+
+	function changeStatus()
+	{		
+		if (getState() == 'free') {
+			$('body').css('background', 'red');
+			$('.main').text('Ocupado');
+			$('.second').text('Busy');
+			return true;
+		}
+
+		if (getState() == 'busy') {
+			$('body').css('background', 'green');
+			$('.main').text('Livre');
+			$('.second').text('free');
+			return true;
+		}
+	}	
+
+	function getState()
+	{
+		if ($('body').css('background-color') ==  'rgb(255, 0, 0)') {
+			return 'busy';
+		}
+
+		return 'free';
+	}
+
+</script>
